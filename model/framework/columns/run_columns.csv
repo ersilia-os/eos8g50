@@ -1,1 +1,11 @@
 name,type,direction,description
+solubility_dmso,float,high,Predicted solubility (log mol/L) in DMSO at 298 K
+solubility_acetonitrile,float,high,Predicted solubility (log mol/L) in acetonitrile at 298 K
+solubility_methanol,float,high,Predicted solubility (log mol/L) in methanol at 298 K
+solubility_dmf,float,high,Predicted solubility (log mol/L) in DMF at 298 K
+solubility_thf,float,high,Predicted solubility (log mol/L) in THF at 298 K
+solubility_dichloromethane,float,high,Predicted solubility (log mol/L) in dichloromethane at 298 K
+solubility_ethyl_acetate,float,high,Predicted solubility (log mol/L) in ethyl acetate at 298 K
+solubility_toluene,float,high,Predicted solubility (log mol/L) in toluene at 298 K
+solubility_heptane,float,high,Predicted solubility (log mol/L) in heptane at 298 K
+solubility_acetone,float,high,Predicted solubility (log mol/L) in acetone at 298 K
