@@ -11,7 +11,7 @@ Deployment:
 Source: Local
 Source Type: External
 Task: Annotation
-Subtask: Property prediction
+Subtask: Property calculation or prediction
 Input:
 - Compound
 Input Dimension: 1
