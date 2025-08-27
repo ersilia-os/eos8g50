@@ -3,7 +3,7 @@ import os
 import sys
 import csv
 import pandas as pd
-from fastsolv.fastsolv.fastsolv import fastsolv
+
 
 # parse arguments
 input_file = sys.argv[1]
@@ -11,6 +11,8 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, root)
+from fastsolv.fastsolv.fastsolv import fastsolv
 
 # Load solvents
 SOLVENTS = pd.read_csv(os.path.join(root, "..", "..", "checkpoints", 'solvents.csv'))

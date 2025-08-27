@@ -1,5 +1,6 @@
 python: "3.10"
 commands:
-    - ["pip", "torch", "2.8.0+cu128"]
+    - ["pip", "torch", "2.8.0"]
     - ["pip", "pandas", "2.3.2"]
     - ["pip", "numpy", "2.2.6"]
+    - ["pip", "fastprop", "1.2.0"]
