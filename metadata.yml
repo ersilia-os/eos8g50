@@ -34,3 +34,6 @@ Publication: https://www.nature.com/articles/s41467-025-62717-7
 Source Code: https://github.com/JacksonBurns/fastsolv
 License: MIT
 Incorporation Date: '2025-08-27'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip
+Model Size: 1734.0
+Environment Size: 7588.0
