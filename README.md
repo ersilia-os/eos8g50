@@ -2,8 +2,7 @@
 
 Prediction of organic solubility using deep learning on fixed Mordred-based representations. The authors test the models under rigorous solute extrapolation conditions, outperforming existing methods and demonstrating prediction accuracy near the intrinsic aleatoric limit of experimental data.
 
-This model was incorporated on 2025-08-27.
-
+This model was incorporated on 2025-08-27.Last packaged on 2025-08-27.
 
 ## Information
 ### Identifiers
@@ -44,12 +43,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8g50](https://hub.docker.com/r/ersiliaos/eos8g50)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1734`
 - **Environment Size (Mb):** `7588`
+- **Image Size (Mb):** `10058.36`
 
+**Computational Performance (seconds):**
+- 10 inputs: `33.17`
+- 100 inputs: `152.49`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/fastsolv](https://github.com/JacksonBurns/fastsolv)
