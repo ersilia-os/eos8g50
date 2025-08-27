@@ -1,2 +1,5 @@
-# mock.txt filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/fastsolv_1701_1.ckpt filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/fastsolv_1701_2.ckpt filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/fastsolv_1701_3.ckpt filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/fastsolv_1701_4.ckpt filter=lfs diff=lfs merge=lfs -text
 model/checkpoints/*.ckpt filter=lfs diff=lfs merge=lfs -text

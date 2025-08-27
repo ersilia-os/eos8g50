@@ -21,17 +21,19 @@ _DESCRIPTOR_COLUMNS = _SOLUTE_COLUMNS + _SOLVENT_COLUMNS
 
 
 _ALL_MODELS = []
-ckpt_dir = Path(__file__).parent / "checkpoints"
-if not ckpt_dir.exists():
+# ckpt_dir = Path(__file__).parent / "checkpoints"
+ckpt_dir = Path(__file__).parent.parent.parent.parent.parent.parent / "checkpoints"
+# if not ckpt_dir.exists():
+if "fastsolv_1701_1.ckpt" not in os.listdir(ckpt_dir) or "fastsolv_1701_2.ckpt" not in os.listdir(ckpt_dir) or "fastsolv_1701_3.ckpt" not in os.listdir(ckpt_dir) or "fastsolv_1701_4.ckpt" not in os.listdir(ckpt_dir):
     try:
-        ckpt_dir.mkdir()
+        ckpt_dir.mkdir(exist_ok=True)
         for i in tqdm(range(1, 5), desc="Downloading model files from Zenodo"):
             urlretrieve(rf"https://zenodo.org/records/13943074/files/fastsolv_1701_{i}.ckpt", ckpt_dir / f"fastsolv_1701_{i}.ckpt")
     except Exception as e:
         raise RuntimeError(
             f"Unable to download model files - try re-running or manually download the checkpoints from zenodo.org/records/13943074 into {ckpt_dir}."
         ) from e
-for checkpoint in os.listdir(ckpt_dir):
+for checkpoint in [i for i in sorted(os.listdir(ckpt_dir)) if "fastsolv" in i and ".ckpt" in i]:
     model = _fastsolv.load_from_checkpoint(os.path.join(ckpt_dir, checkpoint))
     _ALL_MODELS.append(model)
 

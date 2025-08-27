@@ -8,36 +8,25 @@ Description: Prediction of organic solubility using deep learning on fixed Mordr
   near the intrinsic aleatoric limit of experimental data.
 Deployment:
 - Local
-- Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Property prediction
 Input:
 - Compound
 Input Dimension: 1
 Output:
 - Value
-- Score
-- Compound
-- Probability
-- Experimental value
-- '...'
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Consistency: Fixed
+Interpretation: 'Array of predicted log-scale solubility values in 10 organic solvents for each input compound'
 Tag:
 - Solubility
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+- Any
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+- Any
+Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.nature.com/articles/s41467-025-62717-7
 Source Code: https://github.com/JacksonBurns/fastsolv
