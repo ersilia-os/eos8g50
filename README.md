@@ -2,6 +2,7 @@
 
 Prediction of organic solubility using deep learning on fixed Mordred-based representations. The authors test the models under rigorous solute extrapolation conditions, outperforming existing methods and demonstrating prediction accuracy near the intrinsic aleatoric limit of experimental data.
 
+This model was incorporated on 2025-08-27.
 
 
 ## Information
@@ -43,8 +44,11 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `1734`
+- **Environment Size (Mb):** `7588`
 
 
 ### References
