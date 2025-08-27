@@ -1,7 +1,7 @@
 Identifier: eos8g50
 Slug: fastsolv
 Status: In progress
-Title: FASTSOLV
+Title: FASTSOLV solubility prediction
 Description: Prediction of organic solubility using deep learning on fixed Mordred-based
   representations. The authors test the models under rigorous solute extrapolation
   conditions, outperforming existing methods and demonstrating prediction accuracy
