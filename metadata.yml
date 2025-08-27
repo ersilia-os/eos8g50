@@ -2,32 +2,35 @@ Identifier: eos8g50
 Slug: fastsolv
 Status: In progress
 Title: FASTSOLV solubility prediction
-Description: Prediction of organic solubility using deep learning on fixed Mordred-based
-  representations. The authors test the models under rigorous solute extrapolation
-  conditions, outperforming existing methods and demonstrating prediction accuracy
-  near the intrinsic aleatoric limit of experimental data.
+Description: Prediction of organic solubility using deep learning on fixed 
+  Mordred-based representations. The authors test the models under rigorous 
+  solute extrapolation conditions, outperforming existing methods and 
+  demonstrating prediction accuracy near the intrinsic aleatoric limit of 
+  experimental data.
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Annotation
 Subtask: Property calculation or prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Value
+  - Value
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: 'Array of predicted log-scale solubility values in 10 organic solvents for each input compound'
+Interpretation: Array of predicted log-scale solubility values in 10 organic 
+  solvents for each input compound
 Tag:
-- Solubility
+  - Solubility
 Biomedical Area:
-- Any
+  - Any
 Target Organism:
-- Any
+  - Any
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://www.nature.com/articles/s41467-025-62717-7
 Source Code: https://github.com/JacksonBurns/fastsolv
 License: MIT
+Incorporation Date: '2025-08-27'
