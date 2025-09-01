@@ -1,11 +1,16 @@
 name,smiles
-DMSO,CS(=O)C
-Acetonitrile,CC#N
 Methanol,CO
-DMF,CN(C)C=O
-THF,C1CCOC1
-Dichloromethane,C(Cl)C
-Ethyl acetate,CCOC(=O)C
-Toluene,CC1=CC=CC=C1
+Ethanol,CCO
+Isopropanol,CC(C)O
+Acetic acid,CC(=O)O
+Acetonitrile,CC#N
+Acetone,CC(C)=O
+Isobutyl methyl ketone,CC(=O)CC(C)C
+Isopropyl acetate,CC(=O)OC(C)C
+Tetrahydrofuran,C1CCOC1
+tert-Butyl methyl ether,COC(C)(C)C
+N-methylpyrrolidone,CN1CCCC1=O
+Dimethyl sulfoxide,CS(C)=O
+Dimethylformamide,CN(C)C=O
+Toluene,Cc1ccccc1
 Heptane,CCCCCCC
-Acetone,CC(=O)C

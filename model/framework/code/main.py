@@ -16,7 +16,7 @@ from fastsolv.fastsolv.fastsolv import fastsolv
 
 # Load solvents
 SOLVENTS = pd.read_csv(os.path.join(root, "..", "..", "checkpoints", 'solvents.csv'))
-solvent_names = ["solubility_" + i.lower().replace(" ", "_") for i in SOLVENTS['name'].tolist()]
+solvent_names = ["solubility_" + i.lower().replace(" ", "_").replace("-", "_") for i in SOLVENTS['name'].tolist()]
 solvent_smiles = SOLVENTS['smiles'].tolist()
 TEMPERATURE = 298
 
