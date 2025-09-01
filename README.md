@@ -28,18 +28,18 @@ This model was incorporated on 2025-08-27.Last packaged on 2025-09-01.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| solubility_dmso | float | high | Predicted solubility (log mol/L) in DMSO at 298 K |
-| solubility_acetonitrile | float | high | Predicted solubility (log mol/L) in acetonitrile at 298 K |
-| solubility_methanol | float | high | Predicted solubility (log mol/L) in methanol at 298 K |
-| solubility_dmf | float | high | Predicted solubility (log mol/L) in DMF at 298 K |
-| solubility_thf | float | high | Predicted solubility (log mol/L) in THF at 298 K |
-| solubility_dichloromethane | float | high | Predicted solubility (log mol/L) in dichloromethane at 298 K |
-| solubility_ethyl_acetate | float | high | Predicted solubility (log mol/L) in ethyl acetate at 298 K |
-| solubility_toluene | float | high | Predicted solubility (log mol/L) in toluene at 298 K |
-| solubility_heptane | float | high | Predicted solubility (log mol/L) in heptane at 298 K |
-| solubility_acetone | float | high | Predicted solubility (log mol/L) in acetone at 298 K |
+| solubility_methanol | float | high | Predicted solubility (log mol/L) in Methanol at 298 K |
+| solubility_ethanol | float | high | Predicted solubility (log mol/L) in Ethanol at 298 K |
+| solubility_isopropanol | float | high | Predicted solubility (log mol/L) in Isopropanol at 298 K |
+| solubility_acetic_acid | float | high | Predicted solubility (log mol/L) in Acetic acid at 298 K |
+| solubility_acetonitrile | float | high | Predicted solubility (log mol/L) in Acetonitrile at 298 K |
+| solubility_acetone | float | high | Predicted solubility (log mol/L) in Acetone at 298 K |
+| solubility_isobutyl_methyl_ketone | float | high | Predicted solubility (log mol/L) in Isobutyl methyl ketone at 298 K |
+| solubility_isopropyl_acetate | float | high | Predicted solubility (log mol/L) in Isopropyl acetate at 298 K |
+| solubility_tetrahydrofuran | float | high | Predicted solubility (log mol/L) in Tetrahydrofuran at 298 K |
+| solubility_tert_butyl_methyl_ether | float | high | Predicted solubility (log mol/L) in tert-Butyl methyl ether at 298 K |
 
-
+_10 of 15 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
