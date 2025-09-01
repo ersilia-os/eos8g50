@@ -20,8 +20,8 @@ Output:
   - Value
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Array of predicted log-scale solubility values in 10 organic 
-  solvents for each input compound
+Interpretation: Array of predicted log-scale solubility values in 15 organic 
+  solvents (all ASKOS organic solvents) for each input compound.
 Tag:
   - Solubility
 Biomedical Area:
