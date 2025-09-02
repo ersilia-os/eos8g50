@@ -23,7 +23,7 @@ This model was incorporated on 2025-08-27.Last packaged on 2025-09-01.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Array of predicted log-scale solubility values in 10 organic solvents for each input compound
+- **Interpretation:** Array of predicted log-scale solubility values in 15 organic solvents (all ASKOS organic solvents) for each input compound.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
