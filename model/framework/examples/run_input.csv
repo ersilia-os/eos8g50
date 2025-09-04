@@ -1,4 +1,5 @@
-input
+smiles
 CC(C)C[C@H](NC(=O)CNC(=O)c1cc(Cl)ccc1Cl)B(O)O
 CCN(CC)C(=O)c1cccc(C)c1
 [O-][N+](=O)OCCNC(=O)c1cccnc1
+
