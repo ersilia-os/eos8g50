@@ -34,7 +34,7 @@ Publication: https://www.nature.com/articles/s41467-025-62717-7
 Source Code: https://github.com/JacksonBurns/fastsolv
 License: MIT
 Incorporation Date: '2025-08-27'
-Last Packaging Date: '2025-09-02'
+Last Packaging Date: '2026-02-25'
 Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos8g50
@@ -43,9 +43,9 @@ Docker Architecture:
   - ARM64
 Model Size: 878.0
 Environment Size: 1844.0
-Image Size: 4342.76
-Computational Performance 1: 34.02
-Computational Performance 2: 46.46
-Computational Performance 3: 259.06
+Image Size: 4361.37
+Computational Performance 1: 35.45
+Computational Performance 2: 48.05
+Computational Performance 3: 265.01
 Computational Performance 4: -1.0
 Computational Performance 5: -1.0
