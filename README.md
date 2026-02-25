@@ -2,7 +2,7 @@
 
 Prediction of organic solubility using deep learning on fixed Mordred-based representations. The authors test the models under rigorous solute extrapolation conditions, outperforming existing methods and demonstrating prediction accuracy near the intrinsic aleatoric limit of experimental data.
 
-This model was incorporated on 2025-08-27.Last packaged on 2025-09-02.
+This model was incorporated on 2025-08-27.Last packaged on 2026-02-25.
 
 ## Information
 ### Identifiers
@@ -50,11 +50,11 @@ _10 of 15 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `878`
 - **Environment Size (Mb):** `1844`
-- **Image Size (Mb):** `4342.76`
+- **Image Size (Mb):** `4361.37`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.02`
-- 100 inputs: `259.06`
+- 10 inputs: `35.45`
+- 100 inputs: `265.01`
 - 10000 inputs: `-1`
 
 ### References
