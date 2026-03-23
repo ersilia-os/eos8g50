@@ -68,6 +68,7 @@ def fastsolv(df: pd.DataFrame) -> pd.DataFrame:
             torch.zeros(len(df), dtype=torch.float32),
             torch.zeros(len(df), dtype=torch.float32),
         ),
+        batch_size=512,
         num_workers=0,
         persistent_workers=False,
     )

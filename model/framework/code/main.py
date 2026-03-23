@@ -26,16 +26,21 @@ with open(input_file, "r") as f:
     next(reader)  # skip header
     smiles_list = [r[0] for r in reader]
 
-output = []
-for smiles in smiles_list:
+n_solvents = len(solvent_smiles)
 
-    # Calculate solubility for all solvents
-    data = dict(solvent_smiles=solvent_smiles, solute_smiles=[smiles] * len(solvent_smiles), temperature=[TEMPERATURE] * len(solvent_smiles))
-    df = fastsolv(pd.DataFrame(data)).reset_index()
+# Build a single DataFrame with all solute-solvent combinations and run the
+# model once. This avoids recreating the Trainer and recomputing solvent
+# descriptors for every compound, which was the main performance bottleneck.
+df_all = pd.DataFrame({
+    'solute_smiles': [s for s in smiles_list for _ in solvent_smiles],
+    'solvent_smiles': solvent_smiles * len(smiles_list),
+    'temperature': [TEMPERATURE] * (len(smiles_list) * n_solvents),
+})
+results = fastsolv(df_all).reset_index()
 
-    # Assert solvent order is the same
-    assert solvent_smiles == df['solvent_smiles'].tolist()
-    output.append(df["predicted_logS"].tolist())
+# Slice results back into per-compound rows (order is preserved by the DataLoader)
+predicted = results["predicted_logS"].tolist()
+output = [predicted[i * n_solvents:(i + 1) * n_solvents] for i in range(len(smiles_list))]
 
 # To pandas and write file
 outputs = pd.DataFrame(output, columns=solvent_names)
