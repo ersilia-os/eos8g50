@@ -59,7 +59,7 @@ _10 of 15 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/JacksonBurns/fastsolv](https://github.com/JacksonBurns/fastsolv)
-- **Publication**: [https://www.nature.com/articles/s41467-025-62717-7](https://www.nature.com/articles/s41467-025-62717-7)
+- **Publication**: [https://doi.org/10.1038/s41467-025-62717-7](https://doi.org/10.1038/s41467-025-62717-7)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [arnaucoma24](https://github.com/arnaucoma24)
