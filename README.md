@@ -1,6 +1,6 @@
 # FASTSOLV solubility prediction
 
-Prediction of organic solubility using deep learning on fixed Mordred-based representations. The authors test the models under rigorous solute extrapolation conditions, outperforming existing methods and demonstrating prediction accuracy near the intrinsic aleatoric limit of experimental data.
+Predicts how well a solute dissolves in each of fifteen organic solvents at 298 K, reported on a log molar scale. FASTSOLV builds on fixed Mordred descriptors rather than learned representations, and its authors evaluated it under solute extrapolation, holding out entire compounds rather than individual measurements, where it outperformed existing approaches. They frame accuracy as approaching the aleatoric limit set by disagreement between replicate experimental measurements, which bounds how well any model of this data can perform.
 
 This model was incorporated on 2025-08-27.Last packaged on 2026-03-23.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-08-27.Last packaged on 2026-03-23.
 ### Output
 - **Output Dimension:** `15`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Array of predicted log-scale solubility values in 15 organic solvents (all ASKOS organic solvents) for each input compound.
+- **Interpretation:** Predicted solubility as log mol/L in each of fifteen organic solvents at 298 K.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
