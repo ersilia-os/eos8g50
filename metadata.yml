@@ -2,13 +2,14 @@ Identifier: eos8g50
 Slug: fastsolv
 Status: Ready
 Title: FASTSOLV solubility prediction
-Description: Predicts how well a solute dissolves in each of fifteen organic solvents
-  at 298 K, reported on a log molar scale. FASTSOLV builds on fixed Mordred descriptors
-  rather than learned representations, and its authors evaluated it under solute extrapolation,
-  holding out entire compounds rather than individual measurements, where it outperformed
-  existing approaches. They frame accuracy as approaching the aleatoric limit set
-  by disagreement between replicate experimental measurements, which bounds how well
-  any model of this data can perform.
+Description: Predicts how readily a solute dissolves in each of fifteen common organic
+  solvents, reported as log molar solubility at 298 K. Attia, Burns and colleagues
+  trained FASTSOLV on the BigSolDB measurement collection using fixed Mordred descriptors
+  rather than a learned representation, and tested it by holding out whole solutes,
+  where it extrapolated two to three times more accurately than the previous best
+  model and approached the aleatoric limit of 0.5 to 1 log units set by disagreement
+  between laboratories. The underlying model accepts any temperature, Ersilia fixes
+  it at 298 K.
 Deployment:
   - Local
 Source: Local
