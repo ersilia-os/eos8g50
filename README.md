@@ -2,7 +2,8 @@
 
 Predicts how readily a solute dissolves in each of fifteen common organic solvents, reported as log molar solubility at 298 K. Attia, Burns and colleagues trained FASTSOLV on the BigSolDB measurement collection using fixed Mordred descriptors rather than a learned representation, and tested it by holding out whole solutes, where it extrapolated two to three times more accurately than the previous best model and approached the aleatoric limit of 0.5 to 1 log units set by disagreement between laboratories. The underlying model accepts any temperature, Ersilia fixes it at 298 K.
 
-This model was incorporated on 2025-08-27.Last packaged on 2026-10-30.
+This model was incorporated on 2025-08-27.
+Last packaged on 2026-10-30.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 15 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos8g50](https://hub.docker.com/r/ersiliaos/eos8g50)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos8g50.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos8g50_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos8g50_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `878`
